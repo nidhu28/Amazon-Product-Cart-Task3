@@ -1,0 +1,151 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f3f6;
+  color: #222;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background: #232f3e;
+  color: white;
+  text-align: center;
+  padding: 25px 12px;
+  border-bottom: 5px solid #ff9900;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.main-content {
+  flex: 1;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.product-card {
+  background: white;
+  border: 2px solid #ff9900;
+  border-radius: 12px;
+  padding: 24px;
+  margin-top: 18px;
+  box-shadow: 0 4px 12px #00000015;
+}
+
+.product-icon {
+  font-size: 55px;
+  text-align: center;
+}
+
+.product-card h2,
+.product-card h3 {
+  text-align: center;
+}
+
+.product-card h3 {
+  color: #b12704;
+}
+
+label {
+  display: block;
+  margin: 14px 0 6px;
+  font-weight: bold;
+}
+
+select,
+input {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  font-size: 16px;
+  background: white;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+button {
+  padding: 11px 14px;
+  border: none;
+  border-radius: 5px;
+  background: #ff9900;
+  color: #111;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  opacity: 0.85;
+}
+
+.reset {
+  background: #d9534f;
+  color: white;
+}
+
+.toggle {
+  display: block;
+  margin: 0 auto;
+  background: #232f3e;
+  color: white;
+}
+
+.summary {
+  background: #f7f8fa;
+  padding: 16px;
+  margin-top: 24px;
+  border-left: 4px solid #ff9900;
+  border-radius: 8px;
+}
+
+.empty {
+  color: #b12704;
+  font-weight: bold;
+}
+
+.success {
+  color: #18753b;
+  font-weight: bold;
+}
+
+.footer {
+  background: #232f3e;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  margin-top: auto;
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 24px;
+  }
+
+  .buttons button {
+    flex: 1 1 100%;
+  }
+}
